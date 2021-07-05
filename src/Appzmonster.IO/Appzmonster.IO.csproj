@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackageId>Appzmonster.IO</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>appzmonster</Authors>
+    <Description>A small I/O utility library for CSV and file compression.</Description>
+    <Copyright>Copyright (c) 2021 appzmonster</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/appzmonster/io-net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/appzmonster/io-net.git</RepositoryUrl>
+    <RespositoryType>git</RespositoryType>
+    <PackageTags>io csv utility helper comma separated value stream zip compression password</PackageTags>
+    <PackageReleaseNotes>Initial version.</PackageReleaseNotes>
+    <RootNamespace>Appzmonster.IO</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\Appzmonster.IO\src\Appzmonster.IO\bin\Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\Appzmonster.IO\src\Appzmonster.IO\bin\Release</OutputPath>
+    <OutputPath>..\..\..\Appzmonster.IO\src\Appzmonster.IO\bin\Release</OutputPath>
+    <ConsolePause>true</ConsolePause>
+    <ExternalConsole>false</ExternalConsole>
+    <Commandlineparameters></Commandlineparameters>
+    <LangVersion>Default</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SharpZipLib" Version="1.3.2" />
+  </ItemGroup>
+</Project>
